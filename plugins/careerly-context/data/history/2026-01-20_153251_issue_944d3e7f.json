@@ -1,0 +1,14 @@
+{
+  "id": "944d3e7f",
+  "timestamp": "2026-01-20T15:32:51.169829",
+  "session_id": "8d3f9f82",
+  "project": "careerly2-backend",
+  "category": "issue",
+  "content": "음 루플리는 그냥 기능/버그리포팅/이슈등록 등 입력해서 칸반처럼 쓰고있고 \n사내에서 만든 그냥 간단한 팀내 프로젝트고 \n\n이런식으로 생겼음\n\n음 깃헙이슈도 좋아보이긴하는데 \n지금 아예 깃헙이슈는 안쓰고있어서 \n\n루플리 중심으로 가면 어덜까 싶은데 \n\n",
+  "tags": [],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity/careerly2-backend",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

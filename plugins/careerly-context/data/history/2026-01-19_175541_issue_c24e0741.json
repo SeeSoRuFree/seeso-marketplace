@@ -1,0 +1,16 @@
+{
+  "id": "c24e0741",
+  "timestamp": "2026-01-19T17:55:41.531763",
+  "session_id": "35c5f794",
+  "project": "careerly-perflexity",
+  "category": "issue",
+  "content": "내가 인프라 담당자인디 \n지금 마이그레이션 문제가 staging 에서 발생해서 그러는거지? 아니면 프로덕션문제야? 뭐때문이야 지금? ",
+  "tags": [
+    "인프라"
+  ],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "e263f65d",
+  "timestamp": "2026-01-19T19:43:44.714090",
+  "session_id": "8d3f9f82",
+  "project": "careerly-perflexity",
+  "category": "prompt",
+  "content": "브랜치로 feature 작업 안하고 staging 에서 바로하는게 낫지않나? 아닌가 \n어떨거같은지 확인만해주고 \n\n1. 크리티컬플로우 -> 이건 마크가 적당히 정리해줄거임. 뭐 기본 간단한 기능들만 생각하면되고 \n2. 테스트코드는 백엔드는 거의 다 잘 작성되어있는거같은데 커버리지랑 체크함 해줘보고 \n3. 지금 ci 파이프라인 되어있나? ",
+  "tags": [
+    "백엔드"
+  ],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

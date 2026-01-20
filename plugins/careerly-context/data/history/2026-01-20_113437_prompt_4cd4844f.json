@@ -1,0 +1,14 @@
+{
+  "id": "4cd4844f",
+  "timestamp": "2026-01-20T11:34:37.678708",
+  "session_id": "bffb0329",
+  "project": "careerly-perflexity",
+  "category": "prompt",
+  "content": "프로덕션에 chat session 쪽 1/19일 꺼 다 isPublic 인가 그거 true 로 바꿔주라 ",
+  "tags": [],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

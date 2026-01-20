@@ -1,0 +1,14 @@
+{
+  "id": "8a40e525",
+  "timestamp": "2026-01-20T15:06:34.044722",
+  "session_id": "bffb0329",
+  "project": "careerly2-backend",
+  "category": "solution",
+  "content": "@슬찬 슬찬님 요거 main에만 변경사항있고 develop브랜치에는 변경사항이 없는거같은데 확인 가능하신가요?\n일단 develop에 main머지시켜서 작업하겠습니다\n---\npush notification 쪽 작업 dev branch 에는 적용 안됐었나? ",
+  "tags": [],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity/careerly2-backend",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

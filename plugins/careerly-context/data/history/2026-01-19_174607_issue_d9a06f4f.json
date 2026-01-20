@@ -1,0 +1,17 @@
+{
+  "id": "d9a06f4f",
+  "timestamp": "2026-01-19T17:46:07.715355",
+  "session_id": "35c5f794",
+  "project": "careerly-perflexity",
+  "category": "issue",
+  "content": "엥 저거 딱 한번 오고 말았는디 \n\n\n:rotating_light: CloudWatch Alarm | careerly-v2-alb-unhealthy-hosts | ap-northeast-2 | Account: 809714376527\nLatest Update: :rotating_light: Alarm careerly-v2-alb-unhealthy-hosts is in ALARM state\nThreshold Crossed: 2 datapoints [1.0 (19/01/26 08:37:00), 1.0 (19/01/26 08:36:00)] were greater than the threshold (0.0).\nSee more\n1 reply\nAmazon Q\nAPP  Just now\n:rotating_light: CloudWatch Alarm | careerly-v2-alb-unhealthy-hosts | ap-northeast-2 | Account: 809714376527\nThreshold Crossed: 2 datapoints [1.0 (19/01/26 08:42:00), 1.0 (19/01/26 08:41:00)] were greater than the threshold (0.0).\nNamespace\nAWS/ApplicationELB\nMetric\nUnHealthyHostCount\nTimestamp\nMon, 19 Jan 2026 08:45:08 UTC\nAlarm Description\nUnhealthy targets > 0\nSee more\n\n계속 문제인거야? 확인좀 ",
+  "tags": [
+    "프론트",
+    "인프라"
+  ],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

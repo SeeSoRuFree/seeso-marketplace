@@ -1,0 +1,16 @@
+{
+  "id": "0e3aa9df",
+  "timestamp": "2026-01-20T15:41:05.118281",
+  "session_id": "35c5f794",
+  "project": "careerly-perflexity",
+  "category": "prompt",
+  "content": "일단 저거 요청될때까지 \n커리어리플러그인 마켓플레이스에 하나 올리고싶은데 올릴수있으려나? ",
+  "tags": [
+    "MCP"
+  ],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

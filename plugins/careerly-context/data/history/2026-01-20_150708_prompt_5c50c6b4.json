@@ -1,0 +1,16 @@
+{
+  "id": "5c50c6b4",
+  "timestamp": "2026-01-20T15:07:08.942381",
+  "session_id": "bffb0329",
+  "project": "careerly2-backend",
+  "category": "prompt",
+  "content": "ㅅㅂ 그럼 개발서버에 배포해달라고했는데 main에만 배포된겨? ",
+  "tags": [
+    "배포"
+  ],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity/careerly2-backend",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

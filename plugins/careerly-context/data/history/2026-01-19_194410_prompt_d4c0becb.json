@@ -1,0 +1,16 @@
+{
+  "id": "d4c0becb",
+  "timestamp": "2026-01-19T19:44:10.531720",
+  "session_id": "35c5f794",
+  "project": "careerly-perflexity",
+  "category": "prompt",
+  "content": "지금 커리어리 플러그인 좀만 더 정리좀해줘 어떤 내용들을 위주로 보는지를 위주로해서 ",
+  "tags": [
+    "MCP"
+  ],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

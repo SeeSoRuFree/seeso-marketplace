@@ -1,0 +1,14 @@
+{
+  "id": "7cd642bf",
+  "timestamp": "2026-01-20T15:07:46.916592",
+  "session_id": "8d3f9f82",
+  "project": "careerly2-backend",
+  "category": "prompt",
+  "content": "이제 전체적인 workflow 먼저 점검하고 이거 팀 내 공유할라고 \n루플리 서비스를 티켓이나 이슈로 쓰는데 이거랑 연동해서 하는게 나을려나 ?",
+  "tags": [],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity/careerly2-backend",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

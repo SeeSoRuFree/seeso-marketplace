@@ -21,6 +21,18 @@
       "license": "MIT",
       "category": "deployment",
       "keywords": ["commit", "deploy", "vercel", "aws", "kubernetes", "ci-cd", "git"]
+    },
+    {
+      "name": "careerly-context",
+      "source": "./plugins/careerly-context",
+      "description": "커리어리 프로젝트 컨텍스트 관리 - Slack 회의록, 인프라 정보, 의사결정 히스토리 통합 검색",
+      "version": "1.0.0",
+      "author": {
+        "name": "Seulchan Kim"
+      },
+      "license": "MIT",
+      "category": "context-management",
+      "keywords": ["careerly", "context", "slack", "meeting", "infra", "aws", "rds", "decision-history"]
     }
   ]
 }

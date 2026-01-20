@@ -1,0 +1,18 @@
+{
+  "id": "3fa856c8",
+  "timestamp": "2026-01-20T15:29:58.935441",
+  "session_id": "35c5f794",
+  "project": "careerly-perflexity",
+  "category": "prompt",
+  "content": "아 이거 외부 서비스 아니고 \n\nhttps://docs.google.com/spreadsheets/d/1_GJH82C25hgO9eZPrews32rbd4ZynmpXDhVcSl3svHA/edit?usp=sharing\n\n여기 spreadsheet db 쓰게 내부 개발자가 그냥 만든 사내용 프로젝트였어 \n\n이걸로 그냥 시트접근하게끔 mcp 사용 가능하려나? spreadsheet mcp 있지않나? ",
+  "tags": [
+    "MCP",
+    "인프라",
+    "데이터"
+  ],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

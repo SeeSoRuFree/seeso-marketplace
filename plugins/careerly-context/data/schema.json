@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Context History Entry",
+  "description": "커리어리 컨텍스트 히스토리 항목 스키마 (Supabase 마이그레이션 대비)",
+  "type": "object",
+  "required": ["id", "timestamp", "category", "content"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "고유 ID (UUID 앞 8자리)"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "저장 시간 (ISO 8601)"
+    },
+    "category": {
+      "type": "string",
+      "enum": ["prompt", "decision", "context", "issue", "solution", "meeting"],
+      "description": "컨텍스트 카테고리"
+    },
+    "content": {
+      "type": "string",
+      "description": "저장된 내용"
+    },
+    "tags": {
+      "type": "array",
+      "items": {"type": "string"},
+      "description": "태그 목록"
+    },
+    "author": {
+      "type": "string",
+      "description": "작성자"
+    },
+    "project": {
+      "type": "string",
+      "description": "프로젝트명"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "session_id": {"type": "string"},
+        "related_files": {"type": "array", "items": {"type": "string"}},
+        "slack_ref": {"type": "string"},
+        "parent_id": {"type": "string"}
+      }
+    }
+  },
+  "supabase_migration": {
+    "table_name": "context_history",
+    "sql": "CREATE TABLE context_history (id UUID PRIMARY KEY DEFAULT gen_random_uuid(), timestamp TIMESTAMPTZ DEFAULT now(), category TEXT NOT NULL, content TEXT NOT NULL, tags TEXT[] DEFAULT '{}', author TEXT, project TEXT, metadata JSONB DEFAULT '{}');"
+  }
+}

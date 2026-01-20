@@ -1,0 +1,14 @@
+{
+  "id": "f74229da",
+  "timestamp": "2026-01-20T15:35:52.096948",
+  "session_id": "8d3f9f82",
+  "project": "careerly2-backend",
+  "category": "create",
+  "content": "업뎃하지말고 \n그럼 전반적인 작업 형태가 어떻게 될지를 정리를 해줘봐 \n\ndevelop 브랜치에서 작업하는게 나아? \n아ㅣ니면 각 티켓별로 브랜치 만들어서? ",
+  "tags": [],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity/careerly2-backend",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "id": "1b1882a7",
+  "timestamp": "2026-01-20T15:38:03.159265",
+  "session_id": "8d3f9f82",
+  "project": "careerly2-backend",
+  "category": "prompt",
+  "content": "2명이서 빠르게 치는데 \n\ndevelop 직접 하면 \n음 그럼 프로세스가 어케되지? 작업하기전에 무조건 pull 받고 작업시작 \n이렇게 되어야하나? \n\n풀리퀘스트 안할거면 매번 브랜치전략 쓰는건 오히려 비효율적이겠짖? ",
+  "tags": [],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity/careerly2-backend",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

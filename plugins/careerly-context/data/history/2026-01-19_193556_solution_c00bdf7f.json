@@ -1,0 +1,16 @@
+{
+  "id": "c00bdf7f",
+  "timestamp": "2026-01-19T19:35:56.823585",
+  "session_id": "35c5f794",
+  "project": "careerly-perflexity",
+  "category": "solution",
+  "content": "ㅇㅇ 실행해줘 \n글고 나서 aws cloudwatch  이슈 해결됐는지까지 확인좀 ",
+  "tags": [
+    "인프라"
+  ],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

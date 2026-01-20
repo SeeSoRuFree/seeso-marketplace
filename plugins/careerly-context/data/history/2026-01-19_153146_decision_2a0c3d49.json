@@ -1,0 +1,20 @@
+{
+  "id": "2a0c3d49",
+  "timestamp": "2026-01-19T15:31:46.927854",
+  "category": "decision",
+  "content": "커리어리 컨텍스트 플러그인 생성 완료. Slack MCP 연동, 회의록 검색, 인프라 정보 조회 기능 구현됨.",
+  "tags": [
+    "플러그인",
+    "MCP",
+    "Slack"
+  ],
+  "author": "seulchankim",
+  "project": "careerly-perflexity",
+  "metadata": {
+    "related_files": [
+      "SKILL.md",
+      "plugin.json"
+    ],
+    "slack_ref": null
+  }
+}

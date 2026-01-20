@@ -1,0 +1,16 @@
+{
+  "id": "c48c6851",
+  "timestamp": "2026-01-20T15:31:54.775753",
+  "session_id": "35c5f794",
+  "project": "careerly-perflexity",
+  "category": "prompt",
+  "content": "claude-sheets@anthropic-mcp.iam.gserviceaccount.com\n이거만 넣으면 되는거 맞어? 아닌거같은데? ",
+  "tags": [
+    "MCP"
+  ],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

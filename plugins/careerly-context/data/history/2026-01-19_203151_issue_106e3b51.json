@@ -1,0 +1,16 @@
+{
+  "id": "106e3b51",
+  "timestamp": "2026-01-19T20:31:51.273550",
+  "session_id": "8d3f9f82",
+  "project": "careerly2-backend",
+  "category": "issue",
+  "content": "<task-notification>\n<task-id>b10214e</task-id>\n<output-file>/private/tmp/claude/-Users-seulchankim-projects-seeso-careerly-perflexity/tasks/b10214e.output</output-file>\n<status>failed</status>\n<summary>Background command \"Run only api/tests directory to avoid test_cookie_simple.py\" failed with exit code 144</summary>\n</task-notification>\nRead the output file to retrieve the result: /private/tmp/claude/-Users-seulchankim-projects-seeso-careerly-perflexity/tasks/b10214e.output\n<task-notification>\n<task-id>b1a505f</task-id>\n<output-file>/private/tmp/claude/-Users-seulchankim-projects-seeso-careerly-perflexity/tasks/b1a505f.output</output-file>\n<status>completed</status>\n<summary>Background command \"Run a single simple test to see the error\" completed (exit code 0)</summary>\n</task-notification>\nRead the output file to retrieve the result: /private/tmp/claude/-Users-seulchankim-projects-seeso-careerly-perflexity/tasks/b1a505f.output\n<task-notification>\n<task-id>bc97ae1</task-id>\n<output-file>/private/tmp/claude/-Users-seulchankim-projects-seeso-careerly-perflexity/tasks/bc97ae1.output</output-file>\n<status>failed</status>\n<summary>Background command \"Run all tests and extract failure/error info\" failed with exit code 144</summary>\n</task-notification>\nRead the output file to retrieve the result: /private/tmp/claude/-Users-seulchankim-projects-seeso-careerly-perflexity/tasks/bc97ae1.output",
+  "tags": [
+    "백엔드"
+  ],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity/careerly2-backend",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "d81ae442",
+  "timestamp": "2026-01-19T19:00:14.187097",
+  "session_id": "35c5f794",
+  "project": "careerly-perflexity",
+  "category": "create",
+  "content": "내가 수동으로 한건 아닌데 크로드코드 세션에서 이렇게했나보네 흠 \n그럼 \n INSERT INTO django_migrations (app, name, applied)                      \n  VALUES ('api', '0020_create_push_notification_models', NOW());\n\n이거만 실행하면되나? 20번 마이그레이션 파일에는 딱 저 생성만한겨? 확인만 ㄱ \n",
+  "tags": [
+    "백엔드"
+  ],
+  "cwd": "/Users/seulchankim/projects/seeso/careerly-perflexity",
+  "metadata": {
+    "permission_mode": "bypassPermissions",
+    "auto_saved": true
+  }
+}
