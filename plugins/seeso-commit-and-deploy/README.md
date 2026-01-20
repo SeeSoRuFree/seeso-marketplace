@@ -1,6 +1,6 @@
-# Seeso Deploy Plugin
+# seeso-commit-and-deploy
 
-배포 자동화를 위한 Claude Code 플러그인입니다.
+커밋 및 배포 자동화를 위한 Claude Code 플러그인입니다.
 
 ## 기능
 
@@ -8,6 +8,7 @@
 - **작업 내용 분석**: 변경 내용을 분석하여 Hotfix/Bugfix/Feature 판단
 - **배포 전략 결정**: 분석 결과를 바탕으로 Staging/Production 배포 범위 결정
 - **코드 품질 검사**: Mock 코드, TODO, 디버그 코드 검출
+- **브랜치 자동 관리**: 임시 브랜치 생성 → 커밋 → 머지 자동화
 - **사용자 확인**: 자동 판단 후 사용자 확인 및 수정 가능
 
 ## 지원 인프라
@@ -36,39 +37,25 @@
 
 ## 설치
 
-### 방법 1: 프로젝트 전용 설치
-
 ```bash
-# 프로젝트 디렉토리에서
-claude plugin install ./seeso-deploy --scope project
-```
+# 마켓플레이스 추가
+/plugin marketplace add SeeSoRuFree/seeso-marketplace
 
-### 방법 2: 전역 설치 (모든 프로젝트에서 사용)
-
-```bash
-# 전역 설치
-claude plugin install ./seeso-deploy --scope user
-```
-
-### 방법 3: 로컬 테스트
-
-```bash
-# 플러그인 디렉토리를 지정하여 실행
-claude --plugin-dir ./seeso-deploy
+# 플러그인 설치
+/plugin install seeso-commit-and-deploy@seeso
 ```
 
 ## 사용법
 
 ```bash
-# 배포 명령 실행
-/seeso-deploy:deploy
+/seeso-commit-and-deploy:run
 ```
 
 ### 실행 플로우
 
 ```
-1. 인프라 자동 감지
-   └─ 프로젝트 설정 파일 분석
+1. 인프라 확인 (캐시 또는 자동 감지)
+   └─ .seeso-deploy.json 또는 프로젝트 설정 파일 분석
 
 2. 변경 내용 분석
    ├─ 변경 파일 목록
@@ -84,14 +71,17 @@ claude --plugin-dir ./seeso-deploy
 4. 사용자 확인 & 수정
    └─ 자연어로 수정 가능
 
-5. 배포 실행
+5. 브랜치 분리 & 커밋
+   └─ 임시 브랜치 생성 → 커밋 → 타겟 브랜치 머지
+
+6. 배포 실행
    └─ 인프라별 배포 전략 적용
 ```
 
 ### 예시
 
 ```
-🚀 Seeso Deploy
+🚀 Seeso Commit & Deploy
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📦 인프라 감지
@@ -139,21 +129,18 @@ Backend:   AWS EC2 ASG (terraform/ + GitHub Actions)
 > "ok"
 ```
 
-## 설정
+## 인프라 캐시
 
-### 프로젝트별 설정
-
-`.claude/settings.json`에서 플러그인 설정을 오버라이드할 수 있습니다:
+첫 실행 시 감지된 인프라를 `.seeso-deploy.json`에 저장하여 다음부터 빠르게 진행합니다.
 
 ```json
 {
-  "plugins": {
-    "seeso-deploy": {
-      "git.author.name": "seeso user",
-      "git.author.email": "partner@seeso.kr",
-      "checks.mock.patterns": ["**/mock/**", "MOCK_"],
-      "checks.wip.patterns": ["TODO:", "FIXME:", "WIP:"]
-    }
+  "infrastructure": {
+    "frontend": { "platform": "vercel", "directory": "." },
+    "backend": { "platform": "aws-ec2-asg", "directory": "api" }
+  },
+  "git": {
+    "deploy_author": "seeso user <partner@seeso.kr>"
   }
 }
 ```
@@ -161,15 +148,15 @@ Backend:   AWS EC2 ASG (terraform/ + GitHub Actions)
 ## 파일 구조
 
 ```
-seeso-deploy/
+seeso-commit-and-deploy/
 ├── .claude-plugin/
-│   └── plugin.json           # 플러그인 메타데이터
+│   └── plugin.json
 ├── commands/
-│   └── deploy.md             # /seeso-deploy:deploy 명령어
+│   └── run.md
 ├── skills/
 │   └── infra-detect/
-│       └── SKILL.md          # 인프라 자동 감지 스킬
-├── strategies/               # 인프라별 배포 전략
+│       └── SKILL.md
+├── strategies/
 │   ├── vercel.md
 │   ├── aws-ec2-asg.md
 │   ├── kubernetes.md

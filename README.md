@@ -7,27 +7,26 @@ Seeso 개발 자동화 플러그인 모음입니다.
 ### 1. 마켓플레이스 추가
 
 ```bash
-/plugin marketplace add seeso/seeso-marketplace
+/plugin marketplace add SeeSoRuFree/seeso-marketplace
 ```
 
 ### 2. 플러그인 설치
 
 ```bash
-# 배포 플러그인
-/plugin install seeso-deploy@seeso
+/plugin install seeso-commit-and-deploy@seeso
 ```
 
 ## 플러그인 목록
 
 | 플러그인 | 설명 | 명령어 |
 |---------|------|--------|
-| **seeso-deploy** | 배포 자동화 - 인프라 감지, 작업 분석, 배포 전략 결정 | `/seeso-deploy:deploy` |
+| **seeso-commit-and-deploy** | 커밋 및 배포 자동화 - 인프라 감지, 작업 분석, 브랜치 관리, 배포 실행 | `/seeso-commit-and-deploy:run` |
 
 ## 플러그인 상세
 
-### seeso-deploy
+### seeso-commit-and-deploy
 
-배포 프로세스를 자동화합니다.
+커밋 및 배포 프로세스를 자동화합니다.
 
 **기능:**
 - 인프라 자동 감지 (Vercel, AWS, Kubernetes 등)
@@ -38,7 +37,7 @@ Seeso 개발 자동화 플러그인 모음입니다.
 
 **사용법:**
 ```bash
-/seeso-deploy:deploy
+/seeso-commit-and-deploy:run
 ```
 
 ## 팀 프로젝트 자동 설정
@@ -51,12 +50,12 @@ Seeso 개발 자동화 플러그인 모음입니다.
     "seeso": {
       "source": {
         "source": "github",
-        "repo": "seeso/seeso-marketplace"
+        "repo": "SeeSoRuFree/seeso-marketplace"
       }
     }
   },
   "enabledPlugins": {
-    "seeso-deploy@seeso": true
+    "seeso-commit-and-deploy@seeso": true
   }
 }
 ```
