@@ -1,0 +1,5 @@
+{
+  "name": "seeso-commit-and-deploy",
+  "version": "1.0.0",
+  "description": "커밋 및 배포 자동화 - 인프라 감지, 작업 분석, 브랜치 관리, 배포 실행"
+}

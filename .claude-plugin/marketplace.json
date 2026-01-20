@@ -1,0 +1,26 @@
+{
+  "name": "seeso",
+  "owner": {
+    "name": "Seeso",
+    "email": "partner@seeso.kr"
+  },
+  "metadata": {
+    "description": "Seeso 개발 자동화 플러그인 모음 - 배포, 커밋, 코드 리뷰 등",
+    "version": "1.0.0",
+    "homepage": "https://github.com/seeso/seeso-marketplace"
+  },
+  "plugins": [
+    {
+      "name": "seeso-commit-and-deploy",
+      "source": "./plugins/seeso-commit-and-deploy",
+      "description": "커밋 및 배포 자동화 - 인프라 감지, 작업 분석, 브랜치 관리, 배포 실행",
+      "version": "1.0.0",
+      "author": {
+        "name": "Seeso"
+      },
+      "license": "MIT",
+      "category": "deployment",
+      "keywords": ["commit", "deploy", "vercel", "aws", "kubernetes", "ci-cd", "git"]
+    }
+  ]
+}

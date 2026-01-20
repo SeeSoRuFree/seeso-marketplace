@@ -1,0 +1,70 @@
+# Seeso Marketplace
+
+Seeso 개발 자동화 플러그인 모음입니다.
+
+## 설치 방법
+
+### 1. 마켓플레이스 추가
+
+```bash
+/plugin marketplace add seeso/seeso-marketplace
+```
+
+### 2. 플러그인 설치
+
+```bash
+# 배포 플러그인
+/plugin install seeso-deploy@seeso
+```
+
+## 플러그인 목록
+
+| 플러그인 | 설명 | 명령어 |
+|---------|------|--------|
+| **seeso-deploy** | 배포 자동화 - 인프라 감지, 작업 분석, 배포 전략 결정 | `/seeso-deploy:deploy` |
+
+## 플러그인 상세
+
+### seeso-deploy
+
+배포 프로세스를 자동화합니다.
+
+**기능:**
+- 인프라 자동 감지 (Vercel, AWS, Kubernetes 등)
+- 변경 내용 분석 (Hotfix/Bugfix/Feature 판단)
+- Mock/TODO 코드 검출
+- Git author 자동 설정 (Vercel 배포용)
+- 브랜치 분리 → 머지 자동화
+
+**사용법:**
+```bash
+/seeso-deploy:deploy
+```
+
+## 팀 프로젝트 자동 설정
+
+프로젝트의 `.claude/settings.json`에 추가:
+
+```json
+{
+  "extraKnownMarketplaces": {
+    "seeso": {
+      "source": {
+        "source": "github",
+        "repo": "seeso/seeso-marketplace"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "seeso-deploy@seeso": true
+  }
+}
+```
+
+## 기여
+
+새 플러그인 추가 시 `plugins/` 폴더에 플러그인 디렉토리를 만들고, `.claude-plugin/marketplace.json`의 `plugins` 배열에 등록하세요.
+
+## 라이선스
+
+MIT
