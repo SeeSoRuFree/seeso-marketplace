@@ -1,0 +1,63 @@
+{
+  "name": "seeso-careerly-qa-agent",
+  "version": "1.0.0",
+  "description": "목적 지향 QA 자동화 에이전트 - Careerly 프로젝트 품질 보장",
+  "author": "Seeso",
+  "entry": "PLUGIN.md",
+  "commands": {
+    "qa": {
+      "description": "전체 QA 워크플로우 실행 (Plan → Execute → Verify → Report)",
+      "workflow": "full-qa"
+    },
+    "qa:plan": {
+      "description": "QA 계획만 수립 (변경사항 분석 및 검증 전략)",
+      "workflow": "plan-only"
+    },
+    "qa:check": {
+      "description": "빠른 스모크 테스트 (핵심 플로우만)",
+      "workflow": "quick-check"
+    },
+    "qa:verify": {
+      "description": "특정 기능/영역 집중 검증",
+      "workflow": "targeted-verify"
+    },
+    "qa:regression": {
+      "description": "전체 회귀 테스트",
+      "workflow": "regression"
+    }
+  },
+  "agents": {
+    "planner": "agents/planner.md",
+    "executor": "agents/executor.md",
+    "verifier": "agents/verifier.md"
+  },
+  "workflows": {
+    "full-qa": "workflows/full-qa.md",
+    "quick-check": "workflows/quick-check.md",
+    "regression": "workflows/regression.md"
+  },
+  "tools": {
+    "e2e-runner": "tools/e2e-runner.ts",
+    "diff-analyzer": "tools/diff-analyzer.ts"
+  },
+  "config": {
+    "project": {
+      "frontend": {
+        "path": "careerly-v2",
+        "port": 3000,
+        "testCommand": "pnpm test:run",
+        "e2eCommand": "pnpm test:e2e"
+      },
+      "backend": {
+        "path": "careerly2-backend",
+        "port": 8000,
+        "testCommand": "./venv/bin/pytest api/tests/ -q"
+      }
+    },
+    "verification": {
+      "maxRetries": 3,
+      "timeoutMs": 60000,
+      "screenshotOnFail": true
+    }
+  }
+}
