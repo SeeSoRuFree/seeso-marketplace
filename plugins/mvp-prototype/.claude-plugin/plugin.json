@@ -1,0 +1,5 @@
+{
+  "name": "mvp-prototype",
+  "version": "1.1.0",
+  "description": "회의록/기획 자료 분석부터 MVP 프로토타입 빌드, Vercel 배포까지 전체 워크플로우 자동화"
+}

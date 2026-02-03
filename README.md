@@ -22,6 +22,8 @@ Seeso 개발 자동화 플러그인 모음입니다.
 |---------|------|--------|
 | **seeso-commit-and-deploy** | 커밋 및 배포 자동화 - 인프라 감지, 작업 분석, 브랜치 관리, 배포 실행 | `/seeso-commit-and-deploy:run` |
 | **taejae-workflow** | 태재대학교 입학처 웹사이트 유지보수 워크플로우 - 요청 분석, Notion 티켓 관리, 배포 통보 자동화 | `/taejae-workflow:workflow` |
+| **mvp-prototype** | 회의록/기획 자료 분석부터 MVP 빌드, Vercel 배포까지 자동화 | `/mvp-prototype:mvp` |
+| **prototype-analyzer** | React/Next.js 프로토타입 분석 - IA, 화면 목록, 갭/정책 분석 | `/prototype-analyzer:analyze-prototype` |
 
 ## 플러그인 상세
 
@@ -57,6 +59,38 @@ Seeso 개발 자동화 플러그인 모음입니다.
 /taejae-workflow:workflow start <파일경로>  # 워크플로우 시작
 /taejae-workflow:ticket create              # 티켓 생성
 /taejae-workflow:deploy-notify              # 배포 통보 메일 작성
+```
+
+### mvp-prototype
+
+회의록/기획 자료 분석부터 MVP 프로토타입 빌드, Vercel 배포까지 전체 워크플로우를 자동화합니다.
+
+**기능:**
+- 회의록/기획 자료 분석 → 기획 문서 생성
+- 3가지 디자인 스타일 제안 및 선택
+- Open Questions 해결 (빌드 전 검증)
+- React + Vite MVP 빌드
+- Vercel 배포 (선택)
+
+**사용법:**
+```bash
+/mvp-prototype:mvp full ~/Downloads/회의록.md
+```
+
+### prototype-analyzer
+
+React/Next.js 프로토타입을 분석하여 프로덕션 전환에 필요한 항목을 정리합니다.
+
+**기능:**
+- Information Architecture (IA) 분석
+- 화면 목록 (페이지, 컴포넌트, 모달)
+- 갭 분석 (미구현 기능, 끊어진 링크, 목업 데이터)
+- 정책 분석 (비즈니스 정책 결정 필요 항목)
+- 우선순위별 액션 플랜
+
+**사용법:**
+```bash
+/prototype-analyzer:analyze-prototype /path/to/my-app
 ```
 
 ## 팀 프로젝트 자동 설정
