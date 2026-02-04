@@ -1,0 +1,5 @@
+{
+  "name": "taejae-workflow",
+  "version": "1.0.0",
+  "description": "태재대학교 입학처 웹사이트 유지보수 워크플로우 - 요청 분석, Notion 티켓 관리, 배포 통보 자동화"
+}
