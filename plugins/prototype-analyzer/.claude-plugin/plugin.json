@@ -1,0 +1,5 @@
+{
+  "name": "prototype-analyzer",
+  "version": "1.0.0",
+  "description": "React/Next.js 프로토타입 분석 - IA, 화면 목록, 갭 분석, 정책 분석, 액션 플랜 생성"
+}
