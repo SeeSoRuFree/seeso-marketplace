@@ -25,14 +25,14 @@
     {
       "name": "careerly-context",
       "source": "./plugins/careerly-context",
-      "description": "커리어리 프로젝트 컨텍스트 관리 - Slack 회의록, 인프라 정보, Looply 이슈/티켓, 의사결정 히스토리 통합 검색",
-      "version": "1.1.0",
+      "description": "커리어리 프로젝트 종합 기억 시스템. Slack 회의록, careerly-data(GA4/BQ/GSC), somoon DB, Looply 이슈, Supabase를 통합 관리.",
+      "version": "2.0.0",
       "author": {
         "name": "Seulchan Kim"
       },
       "license": "MIT",
       "category": "context-management",
-      "keywords": ["careerly", "context", "slack", "meeting", "infra", "aws", "rds", "decision-history", "looply", "ticket", "issue"]
+      "keywords": ["careerly", "context", "slack", "meeting", "infra", "aws", "rds", "decision-history", "looply", "ticket", "issue", "somoon", "bigquery", "gsc", "supabase"]
     },
     {
       "name": "taejae-workflow",
