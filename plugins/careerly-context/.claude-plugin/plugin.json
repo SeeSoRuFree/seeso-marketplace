@@ -1,11 +1,11 @@
 {
   "name": "careerly-context",
-  "description": "커리어리 프로젝트 종합 기억 시스템. Slack 회의록, careerly-data(GA4/BQ/GSC), somoon DB, Looply 이슈, Supabase를 통합 관리.",
-  "version": "2.0.0",
+  "description": "커리어리 프로젝트 종합 컨텍스트. Slack 회의록, careerly-data(GA4/BQ/GSC), somoon DB, Looply 이슈 통합 관리.",
+  "version": "2.1.0",
   "author": {
     "name": "Seulchan Kim"
   },
-  "keywords": ["careerly", "context", "slack", "meeting", "infrastructure", "somoon", "bigquery", "gsc", "supabase"],
+  "keywords": ["careerly", "context", "slack", "meeting", "infrastructure", "looply", "somoon", "ga4", "bigquery", "gsc"],
   "repository": "",
   "license": "MIT"
 }
