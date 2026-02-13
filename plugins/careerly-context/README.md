@@ -36,6 +36,7 @@
 │                                ├── /infra               │
 │                                ├── /decision            │
 │                                ├── /looply              │
+│                                ├── /ccc                 │
 │                                ├── /save                │
 │                                └── /history             │
 ├─────────────────────────────────────────────────────────┤
@@ -106,6 +107,7 @@ Slack의 회의록 채널에서 키워드로 검색합니다.
 - `#공식-회의록`
 - `#커리어리-운영`
 - `#커리어리-제품`
+- `#ccc-careerly` - CCC 작업 컨텍스트 (세션 기록, 핸드오프)
 
 ### 2. 인프라 정보 조회 (`/infra`)
 
@@ -169,7 +171,23 @@ Google Sheets 기반 사내 이슈 트래커를 조회/관리합니다.
 이슈:   submitted → in_progress → done
 ```
 
-### 4. 의사결정 추적 (`/decision`)
+### 4. CCC 채널 작업 공유 (`/ccc`)
+
+커리어리 프로젝트의 CCC 채널(`#ccc-careerly`)에 작업 내용을 기록합니다.
+
+```bash
+/careerly-context:ccc 작업 내용
+```
+
+**CCC 워크플로우 (seeso-ccc 플러그인 연동):**
+- **채널**: `#ccc-careerly` (커리어리 전용 CCC 채널)
+- **쓰레드 = 작업 단위** — 하나의 쓰레드가 하나의 작업 생명주기
+- **메시지 3종**: `[기록]` (컨텍스트 로그), `[액션]` (@멘션, 응답 필요), `[핸드오프]` (세션 인계)
+- **규칙**: 텍스트만, 500자 이내, 기존 쓰레드 이어쓰기
+
+> **Note:** `seeso-ccc` 플러그인과 함께 사용하면 더욱 강력한 CCC 워크플로우를 사용할 수 있습니다.
+
+### 5. 의사결정 추적 (`/decision`)
 
 과거 의사결정의 배경과 이유를 추적합니다.
 
@@ -178,7 +196,7 @@ Google Sheets 기반 사내 이슈 트래커를 조회/관리합니다.
 /careerly-context:decision MCP 도입 배경
 ```
 
-### 5. 컨텍스트 저장/조회 (`/save`, `/history`)
+### 6. 컨텍스트 저장/조회 (`/save`, `/history`)
 
 수동으로 중요한 컨텍스트를 저장하고 나중에 검색합니다.
 
@@ -210,7 +228,7 @@ Google Sheets 기반 사내 이슈 트래커를 조회/관리합니다.
 }
 ```
 
-**필요 권한:** `channels:history`, `channels:read`, `search:read`, `users:read`
+**필요 권한:** `channels:history`, `channels:read`, `search:read`, `users:read`, `chat:write`
 
 ### 2. Supabase MCP
 
@@ -254,6 +272,14 @@ brew install awscli
 aws configure --profile dev_careerly
 ```
 
+### 5. seeso-ccc Plugin (선택)
+
+CCC 워크플로우를 위한 전용 플러그인입니다. 단독으로도 동작하지만, careerly-context와 함께 사용하면 더욱 강력합니다.
+
+```bash
+/plugin install seeso-ccc@seeso
+```
+
 ## Installation
 
 ```bash
@@ -271,7 +297,7 @@ aws configure --profile dev_careerly
 
 | 소스 | MCP | 용도 |
 |------|-----|------|
-| Slack | slack | 회의록, 대화 검색 |
+| Slack | slack | 회의록, 대화 검색, CCC 채널 |
 | Supabase | supabase | DB 스키마, 데이터 조회 |
 | Looply (Google Sheets) | google-sheets | 이슈/티켓 관리 |
 | AWS | CLI | 인프라 상태 조회 |
@@ -296,6 +322,7 @@ aws configure --profile dev_careerly
 
 | 버전 | 날짜 | 변경사항 |
 |------|------|----------|
+| 2.1.0 | 2026-02-13 | CCC 채널 연동 추가 (/ccc 커맨드, #ccc-careerly 검색) |
 | 1.1.0 | 2026-01-20 | Looply 이슈/티켓 관리 기능 추가 |
 | 1.0.0 | 2026-01-19 | 초기 버전 (Slack, 인프라, 히스토리) |
 

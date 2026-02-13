@@ -1,0 +1,8 @@
+{
+  "name": "seeso-ccc",
+  "description": "CCC(Context Collector Channel) 워크플로우 플러그인. Claude Code 세션과 슬랙 CCC 채널을 잇는 심리스 워크플로우.",
+  "version": "0.1.0",
+  "author": {
+    "name": "SeeSo Team"
+  }
+}
