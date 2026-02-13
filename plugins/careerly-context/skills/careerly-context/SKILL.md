@@ -38,6 +38,17 @@ description: 커리어리 프로젝트 컨텍스트 플러그인. "커리어리"
 | `#공식-회의록` | 회의록 저장 | C01BZ0TSDNX |
 | `#커리어리-제품` | 제품 논의 | - |
 | `#커리어리-운영` | 운영 이슈 | - |
+| `#ccc-careerly` | **CCC 컨텍스트 허브** — 세션 간 브릿지 | - |
+
+### 3-1. CCC 워크플로우 (seeso-ccc 플러그인 연동)
+
+> 슬랙에 작업 기록/공유/핸드오프할 때는 **seeso-ccc 워크플로우**를 따른다.
+
+- **채널**: `#ccc-careerly` (커리어리 전용 CCC 채널)
+- **쓰레드 = 작업 단위** — 하나의 쓰레드가 하나의 작업 생명주기
+- **메시지 3종**: `[기록]` (컨텍스트 로그), `[액션]` (@멘션, 응답 필요), `[핸드오프]` (세션 인계)
+- **규칙**: 텍스트만, 500자 이내, 기존 쓰레드 이어쓰기
+- **커맨드**: `/careerly-context:ccc` — 작업 내용을 #ccc-careerly에 포스팅
 
 ### 4. 레거시 (사용 금지)
 - ❌ `beta-database-all` - 테이블명 불일치
@@ -153,10 +164,11 @@ aws elbv2 describe-target-health --profile dev_careerly --region ap-northeast-2 
 
 ---
 
-## 🔗 관련 MCP
+## 🔗 관련 MCP & 플러그인
 
-| MCP | 용도 |
+| MCP/플러그인 | 용도 |
 |-----|------|
-| `slack` | 회의록, 대화 검색 |
+| `slack` | 회의록, 대화 검색, CCC 채널 읽기/쓰기 |
 | `supabase` | DB 쿼리 |
 | `careerly-ga4` | GA4/BigQuery |
+| **seeso-ccc** 플러그인 | CCC 워크플로우 (`/seeso-ccc:read`, `/seeso-ccc:share`, `/seeso-ccc:handoff`) |
